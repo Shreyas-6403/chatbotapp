@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/topView"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="172dp"
+        android:layout_height="191dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029"
+        app:lottie_autoPlay="true"
+        app:lottie_repeatCount="100"
+        app:lottie_rawRes="@raw/rchats" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@drawable/wave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topView"
+        />
+
+
+    <TextView
+        android:id="@+id/topText"
+        android:layout_width="196dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:text="Already Have an Account?"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="@+id/topView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="403dp"
+        android:layout_height="395dp"
+
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/bg_linearlayout"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputEmail"
+            android:layout_width="309dp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_border"
+                android:drawableStart="@drawable/user2"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="userId"
+
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:textColorHint="@color/cardview_light_background" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputPassword"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/round_border"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="16dp"
+                android:ems="10"
+
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textColorHint="@color/cardview_light_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inputEmail"
+
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_marginTop="20dp"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.976">
+
+            <TextView
+                android:id="@+id/logtxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Login"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25dp"/>
+            <ProgressBar
+                android:id="@+id/pgbar"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/white"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+
+            android:text="Dont have an acount ? Sign Up "
+            android:textColor="@color/cardview_light_background"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

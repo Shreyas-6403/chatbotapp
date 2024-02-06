@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "10460436126",
+    "project_id": "chatbot-7014e",
+    "storage_bucket": "chatbot-7014e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:10460436126:android:a7e7934a8c8106aaeb4d8f",
+        "android_client_info": {
+          "package_name": "com.shopbotfianlproject.chatbot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "10460436126-75sd9emq8tppdkidu0haphuggt1ee3vq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzXlS39XcLeLr80-QBUT06PqJqfBriEFs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "10460436126-75sd9emq8tppdkidu0haphuggt1ee3vq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

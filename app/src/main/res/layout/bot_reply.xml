@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="start"
+    android:id="@+id/botreply"
+    app:cardBackgroundColor="@color/LightGrey"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="5dp">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="#E0F7FA">
+
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/botimg" />
+
+
+        <TextView
+            android:id="@+id/bot_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginRight="10dp"
+            android:padding="3dp"
+            android:textColor="@color/black"
+            tools:text="bot response" />
+
+
+    </LinearLayout>
+
+
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:id="@+id/cv1"
+    app:cardBackgroundColor="@color/LightGrey"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/img23"
+        android:layout_width="252dp"
+        android:layout_height="236dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/botimg"
+        android:visibility="invisible" />
+
+
+    <Button
+        android:id="@+id/buy1"
+        android:layout_width="60dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="290dp"
+        android:text="Buy"
+        android:background="@color/AliceBlue"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="10dp"
+android:onClick="buy1"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/more1"
+        android:layout_width="60dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="62dp"
+        android:text="More"
+        android:onClick="more1"
+        android:background="@color/AliceBlue"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="10dp"
+        android:visibility="visible" />
+
+</androidx.cardview.widget.CardView>
+
+    <!--" then end your comment with " -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/cv2"
+        app:cardBackgroundColor="@color/LightGrey"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/img24"
+            android:layout_width="252dp"
+            android:layout_height="236dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/botimg"
+            android:visibility="invisible" />
+
+
+        <Button
+            android:id="@+id/buy2"
+            android:layout_width="60dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="290dp"
+            android:text="buy"
+            android:background="@color/AliceBlue"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="10dp"
+            android:onClick="buy2"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/more2"
+            android:layout_width="60dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="290dp"
+            android:layout_marginLeft="62dp"
+            android:text="more"
+            android:textColor="@android:color/holo_blue_bright"
+            android:onClick="more2"
+            android:textSize="5dp"
+            android:visibility="visible" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/cv3"
+        app:cardBackgroundColor="@color/LightGrey"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/img25"
+            android:layout_width="252dp"
+            android:layout_height="236dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/botimg"
+            android:visibility="visible" />
+
+
+        <Button
+            android:id="@+id/buy3"
+            android:layout_width="60dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="290dp"
+            android:text="buy"
+            android:background="@color/AliceBlue"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="10dp"
+            android:onClick="buy3"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/more3"
+            android:layout_width="60dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="290dp"
+            android:layout_marginLeft="62dp"
+            android:background="@color/AliceBlue"
+            android:text="more"
+            android:textColor="@android:color/holo_blue_bright"
+            android:onClick="more3"
+            android:textSize="5dp"
+            android:visibility="visible" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/cv4"
+        app:cardBackgroundColor="@color/LightGrey"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/img246"
+            android:layout_width="252dp"
+            android:layout_height="236dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/botimg"
+            android:visibility="invisible" />
+
+
+        <Button
+            android:id="@+id/buy4"
+            android:layout_width="60dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="290dp"
+            android:text="buy"
+            android:background="@color/AliceBlue"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="10dp"
+            android:onClick="buy2"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/more4"
+            android:layout_width="60dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="290dp"
+            android:layout_marginLeft="62dp"
+            android:text="more"
+            android:background="@color/AliceBlue"
+            android:textColor="@android:color/holo_blue_bright"
+            android:onClick="more2"
+            android:textSize="5dp"
+            android:visibility="visible" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/cv5"
+        app:cardBackgroundColor="@color/LightGrey"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/img247"
+            android:layout_width="252dp"
+            android:layout_height="236dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/botimg"
+            android:visibility="invisible" />
+
+
+        <Button
+            android:id="@+id/buy5"
+            android:layout_width="60dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="290dp"
+            android:text="buy"
+            android:background="@color/AliceBlue"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="10dp"
+            android:onClick="buy2"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/more5"
+            android:layout_width="60dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="290dp"
+            android:layout_marginLeft="62dp"
+            android:text="more"
+            android:background="@color/AliceBlue"
+            android:textColor="@android:color/holo_blue_bright"
+            android:onClick="more2"
+            android:textSize="5dp"
+            android:visibility="visible" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
+
+
+
+
+</LinearLayout>
+
+

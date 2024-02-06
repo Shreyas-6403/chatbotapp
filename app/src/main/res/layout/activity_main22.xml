@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/shopl"
+    android:background="@drawable/pthm2"
+    tools:context=".Main22Activity"
+
+
+
+
+    >
+
+
+    <ImageView
+        android:id="@+id/imageea"
+        android:layout_width="173dp"
+        android:layout_height="163dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.231"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.954"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="-16dp">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <LinearLayout
+            android:id="@+id/recyclerview"
+            android:layout_width="408dp"
+            android:layout_height="545dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp">
+
+            <GridView
+                android:id="@+id/idGVCourses"
+                android:layout_width="413dp"
+                android:layout_height="541dp"
+                android:numColumns="2"
+
+                />
+        </LinearLayout>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="520dp"
+    android:layout_height="150dp"
+    >
+    <ViewFlipper
+        android:layout_width="490dp"
+        android:layout_height="150dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:flipInterval="3000"
+        android:autoStart="true"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="452dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/oneplus" />
+
+
+        <ImageView
+            android:layout_width="411dp"
+            android:layout_height="155dp"
+            android:layout_gravity="center"
+            android:background="@drawable/unnamed" />
+
+        <ImageView
+            android:layout_width="452dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/icoo"
+            />
+
+        <ImageView
+            android:layout_width="418dp"
+            android:layout_height="155dp"
+            android:background="@drawable/rogh"
+            />
+    </ViewFlipper>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="296dp"
+            android:layout_height="36dp"
+            android:layout_above="@+id/recyclerview"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="105dp"
+            android:layout_marginEnd="102dp"
+            android:layout_marginBottom="58dp"
+            android:backgroundTint="@color/black"
+            android:text="Latest Smart Phones "
+            android:textColor="@color/Black"
+
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="709dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/whit" />
+
+        <AutoCompleteTextView
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="353dp"
+            android:layout_height="40dp"
+            android:background="@drawable/shape"
+            android:completionThreshold="2"
+
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/Black"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.172"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.008" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/price"
+
+            android:visibility="invisible"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/filter"
+                android:layout_width="48dp"
+                android:layout_height="41dp"
+                android:layout_marginLeft="300dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/ic_baseline_filter_alt_24"
+                app:layout_constraintVertical_bias="0.008"
+                />
+
+
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="48dp"
+                android:layout_height="41dp"
+                android:visibility="gone"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:layout_constraintVertical_bias="0.008"
+                app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
